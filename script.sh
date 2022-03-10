@@ -1,4 +1,4 @@
-sudo apt-get install zsh
+sudo apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip

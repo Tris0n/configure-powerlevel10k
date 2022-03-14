@@ -1,10 +1,13 @@
+#!/bin/bash
+
 sudo apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
 mv Hack.zip /usr/local/share/fonts/
-unzip /usr/local/share/fonts/Hack.zip
-rm -rf /usr/local/share/fonts/Hack.zip
+cd /usr/local/share/fonts
+unzip Hack.zip
+rm -rf Hack.zip
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
